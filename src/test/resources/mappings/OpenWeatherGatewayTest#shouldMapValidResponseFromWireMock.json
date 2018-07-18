@@ -1,0 +1,66 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/data/2.5/forecast?appId=test-api-key&type=accurate&units=metric&q=Berlin,DE",
+    "headers": {
+      "Accept": {
+        "equalTo": "application/json;charset=UTF-8"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "jsonBody": {
+      "cod": "200",
+      "message": 0.0043,
+      "cnt": 39,
+      "city": {
+        "id": 2950159,
+        "name": "Berlin",
+        "coord": {
+          "lat": 52.517,
+          "lon": 13.3889
+        },
+        "country": "DE",
+        "population": 1000000
+      },
+      "list": [
+        {
+          "dt": 1531850400,
+          "main": {
+            "temp": 295.13,
+            "temp_min": 295.13,
+            "temp_max": 295.807,
+            "pressure": 1021.22,
+            "sea_level": 1028.63,
+            "grnd_level": 1021.22,
+            "humidity": 42,
+            "temp_kf": -0.68
+          },
+          "weather": [
+            {
+              "id": 800,
+              "main": "Clear",
+              "description": "clear sky",
+              "icon": "02d"
+            }
+          ],
+          "clouds": {
+            "all": 8
+          },
+          "wind": {
+            "speed": 3.66,
+            "deg": 253.5
+          },
+          "sys": {
+            "pod": "d"
+          },
+          "dt_txt": "2018-07-17 18:00:00"
+        }
+      ]
+    }
+  }
+}

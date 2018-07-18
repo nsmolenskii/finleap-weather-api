@@ -1,0 +1,4 @@
+gateways:
+  open-weather:
+    params:
+      app-id: 'b89cd1ee30f18712d54f278bbc141228'

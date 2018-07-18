@@ -1,0 +1,19 @@
+gateways:
+  open-weather:
+    host-name: 'http://api.openweathermap.org'
+    api-url: '${gateways.open-weather.host-name}/data/2.5?appId={app-id}&type={type}&units={units}'
+    params:
+      app-id: ~ # profile override
+      type: 'accurate'
+      units: 'metric'
+
+logbook:
+  write:
+    level: trace
+    category: http-wire
+  obfuscate:
+    parameters:
+      - appId
+logging:
+  level:
+    http-wire: trace

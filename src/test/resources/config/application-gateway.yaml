@@ -1,0 +1,5 @@
+gateways:
+  open-weather:
+    host-name: 'http://localhost:${wiremock.server.port}'
+    params:
+      app-id: 'test-api-key'

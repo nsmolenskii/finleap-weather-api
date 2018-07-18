@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/data/2.5/forecast?appId=test-api-key&type=accurate&units=metric&q=Berlin,RU",
+    "headers": {
+      "Accept": {
+        "equalTo": "application/json;charset=UTF-8"
+      }
+    }
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json;charset=UTF-8"
+    },
+    "jsonBody": {
+      "cod": "404",
+      "message": "city not found"
+    }
+  }
+}
